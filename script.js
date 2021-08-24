@@ -83,7 +83,7 @@ const popupPlace = document.querySelector('#popupNewPlace');
 const namePlaceInput = popupPlace.querySelector('[name="image-name"]');
 const linkPlaceInput = popupPlace.querySelector('[name="image-link"]');
 
-function formSubmitHandler (evt) {
+function formSubmitAddElement (evt) {
     evt.preventDefault(); 
     if (namePlaceInput.value === '' || linkPlaceInput.value === '' ) {
         alert('Вы не заполнили данные для добавления карточки');
@@ -94,7 +94,7 @@ function formSubmitHandler (evt) {
     }
 }
 
-popupPlace.addEventListener('submit', formSubmitHandler); 
+popupPlace.addEventListener('submit', formSubmitAddElement); 
 
 // добавляем предопределенные карточки
 const initialCards = [
