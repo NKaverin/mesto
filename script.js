@@ -30,7 +30,6 @@ function addEventOpenPopup(popupId, popupClassButtonName, clearValues = false, e
             popupElement.querySelectorAll('.popup__field').forEach(element => element.value = '');    
         }
         // меняем картинку и текст на поп-апе 
-        console.log(elemSrc !== '');
         if (elemSrc !== '') {
             popupElement.querySelector('.popup__image').src = elemSrc;    
         }
