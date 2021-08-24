@@ -2,7 +2,7 @@
 function addEventClickOnHeart(element) {
     element.addEventListener('click', function () {
         if (element.src.includes('/vendor/images/heart.svg')) {
-            element.src = './vendor/images/Fullheart.svg';
+            element.src = './vendor/images/FullHeart.svg';
         }
         else {
             element.src = './vendor/images/heart.svg';
